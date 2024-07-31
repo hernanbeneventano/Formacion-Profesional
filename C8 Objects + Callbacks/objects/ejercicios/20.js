@@ -4,6 +4,12 @@ function sumarLikesDeUsuario(objetoUsuario) {
   // Cada post posee una propiedad llamada "likes". Esta propiedad es un número.
   // Debes sumar los likes de todos los post y retornar el resultado.
   // Tu código:
+  var totalLikes=0;
+  for (let index = 0; index < objetoUsuario['posts'].length; index++) {
+    totalLikes+=objetoUsuario['posts'][index]['likes'];
+    
+  }
+  return totalLikes;
 }
 
 module.exports = sumarLikesDeUsuario;
